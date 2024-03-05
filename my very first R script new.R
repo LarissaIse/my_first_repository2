@@ -126,3 +126,119 @@ y
 plot(x,y, type ="b")
 
 
+#write a function that rolls a pair of dice and report their sum
+roll_fair <- function(){
+  dice <- sample(x = 1:6,size = 2,replace = TRUE)
+  return(sum(dice))
+}
+
+#write a function that rolls a pair of loaded dices
+----
+  
+  fig1 <- ggplot2::qplot(fair_sums)
+fig2 <- ggplot2::qplot(loaded)
+
+
+?cowplot
+install.packages
+library(cowplot)
+?cowplot
+
+roll_many(n) # --> roll n pairs of dice and return the sums
+roll_many <- function(n=){
+  roll_fair <- function(){
+    sum()
+  }
+  replicate(n, roll_fair())
+}
+
+qplot(roll_many(1e4))  
+
+#part from tidyverse, called pipe which means and then  
+%>%   |>
+  library(magrittr)
+x<-3
+y<- exp(x)
+z <- sqrt(y)  
+t <- log10(z)
+s <- abs(t)
+
+s <- x %>%
+  exp() %>%
+  sqrt()  %>%
+  log10() %>%
+  abs()
+
+substraction <- function(x,y){
+  return(x-y)
+}
+
+x<- 3
+x  %>%
+  substraction(1)
+
+x  %>%
+  substraction(1, .)
+# the . is indicating the location of the argument before the pipe
+
+x %>%
+  
+  
+  # R Objects-----
+# atomic vectors, basic types (integers, character, logicals, compplex, raws but just one type per object), coercion, matrices and arrays, attrubtes and class, list and data frames, loading and saving data
+die
+is.vector(die)
+length(die)
+#will use very common
+
+five <- 5
+is.vector(five)
+length(five)
+
+typeof(die +0.0)
+typeof(five)
+
+near(sqrt(2)^2-2)
+
+logicals <- c(TRUE, FALSE)
+logicals
+typeof(logicals)
+
+text <- c("Hello", "World")
+length(text)
+typeof(text)
+
+five <- 5L
+typeof(five)
+
+#Coercion ----
+logicals
+int <- c(1L, 5L)
+
+c(logicals, int)
+logicals %>%
+  c(int)
+
+as.logical(int)
+
+logicals %>%
+  c(int) %>%
+  c(die) %>%
+  c(text) %>%
+  typeof()  
+
+logicals %>%
+  c(int) %>%
+  c(die) %>%
+  c(text) %>%
+  
+  as.numeric()
+as.logical()
+as.character()
+
+
+
+
+
+
+
